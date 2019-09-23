@@ -1,0 +1,141 @@
+html {
+    background-color: #F0ECEE
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: normal;
+    color: #88898B;
+}
+
+a:link {
+    text-decoration: none;
+    color: #88898B;
+    font-style: normal;
+  }
+
+a:visited {
+    text-decoration: none;
+    color: #88898B;
+    font-style: normal;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.column-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.emphasizedText {
+    color: #FF4850;
+}
+
+h1 {
+    color: black;
+    font-style: bold;
+}
+
+p {
+    font-size: 16px;
+}
+
+.adoptMe {
+    flex: 5;
+    font-size: 16px;
+    font-style: bold;
+    color: black;
+    padding: 15px 0;
+}
+
+.aboutUs {
+    display: inline-flex;
+    border: 1px solid #F0ECEE;
+    padding: 35px 0;
+    text-align: center;
+    margin: 10px;
+}
+
+.whatWeDo {
+    display: inline-flex;
+    border: 1px solid #F0ECEE;
+    padding: 35px 0;
+    text-align: center;
+    margin: 10px;
+}
+
+.benefits {
+    display: inline-flex;
+    border: 1px solid #F0ECEE;
+    padding: 35px 0;
+    text-align: center;
+    margin: 10px;
+}
+
+.ourBuddies {
+    display: inline-flex;
+    border: 1px solid #F0ECEE;
+    padding: 35px 0;
+    text-align: center;
+    margin: 10px;
+}
+
+.contactUs {
+    display: inline-flex;
+    text-align: center;
+    margin: 10px;
+}
+
+.contact {
+    border: none;
+    border-radius: 8px;
+    background-color: #FF4850;
+    color: #F0ECEE;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.contact:hover {
+    background-color: #CCC;
+}
+
+.findOut {
+    border: none;
+    border-radius: 8px;
+    background-color: #FF4850;
+    color: #F0ECEE;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.findOut:hover {
+    background-color: #CCC;
+}
+
+.flex-box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+body {
+    background-image: no-repeat top center url(bulldog.jpg);
+    min-height: 100%;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+}
