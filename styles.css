@@ -1,5 +1,7 @@
 html {
-    background-color: #F0ECEE
+    background: no-repeat top center url(bulldog.jpg);
+    background-size: cover;
+    min-height: 100%;
 }
 
 body {
@@ -39,7 +41,6 @@ a:hover {
 
 h1 {
     color: black;
-    font-style: bold;
 }
 
 p {
@@ -49,14 +50,11 @@ p {
 .adoptMe {
     flex: 5;
     font-size: 16px;
-    font-style: bold;
-    color: black;
     padding: 15px 0;
 }
 
 .aboutUs {
     display: inline-flex;
-    border: 1px solid #F0ECEE;
     padding: 35px 0;
     text-align: center;
     margin: 10px;
@@ -64,7 +62,6 @@ p {
 
 .whatWeDo {
     display: inline-flex;
-    border: 1px solid #F0ECEE;
     padding: 35px 0;
     text-align: center;
     margin: 10px;
@@ -72,7 +69,6 @@ p {
 
 .benefits {
     display: inline-flex;
-    border: 1px solid #F0ECEE;
     padding: 35px 0;
     text-align: center;
     margin: 10px;
@@ -80,7 +76,6 @@ p {
 
 .ourBuddies {
     display: inline-flex;
-    border: 1px solid #F0ECEE;
     padding: 35px 0;
     text-align: center;
     margin: 10px;
@@ -130,12 +125,85 @@ p {
     grid-template-rows: auto;
 }
 
-body {
-    background-image: no-repeat top center url(bulldog.jpg);
-    min-height: 100%;
+.row1 {
+    padding-top: 30px;
 }
 
-.column1 {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 600px) {
+    html {
+        background-color: #F0ECEE;
+        background: none;
+    }
+
+    .column-layout {
+        flex-direction: column;
+    }
+
+    .adoptMe {
+        flex: 0;
+        padding: 0px 0;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .column {
+        padding: 0px 0;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .whatWeDo {
+        padding: 0px 0;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .benefits {
+        padding: 0px 0;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .ourBuddies {
+        padding: 0px 0;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .contactUs {
+        padding: 0px 0;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .contact {
+        border: none;
+        border-radius: 8px;
+        background-color: #FF4850;
+        color: #F0ECEE;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .flex-box-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .findOut {
+        border: none;
+        border-radius: 8px;
+        background-color: #FF4850;
+        color: #F0ECEE;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        width: 90%;
+    }
 }
