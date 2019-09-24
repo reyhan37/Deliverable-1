@@ -129,7 +129,7 @@ p {
     padding-top: 30px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     html {
         background-color: #F0ECEE;
         background: none;
@@ -186,7 +186,7 @@ p {
         padding-top: 20px;
         padding-bottom: 20px;
         font-size: 20px;
-        width: 90%;
+        width: 100%;
     }
 
     .flex-box-container {
@@ -204,6 +204,6 @@ p {
         padding-top: 20px;
         padding-bottom: 20px;
         font-size: 20px;
-        width: 90%;
+        width: 100%;
     }
 }
