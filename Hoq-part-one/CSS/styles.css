@@ -6,9 +6,12 @@ html {
 body {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: 18px;
     font-style: normal;
     color: #88898B;
+}
+
+.adoptMe {
+    font-weight: 400;
 }
 
 a:link {
@@ -25,13 +28,34 @@ a:visited {
 
 a:hover {
     text-decoration: none;
-    color: black;
+    color: #FF4850;
 }
 
 .flexbox {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    vertical-align: middle;
+}
+
+ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+li {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    font-weight: 300;
+    list-style: outside none none;
+}
+
+.adopt {
+    color: black;
 }
 
 .emphasizedText {
@@ -40,44 +64,47 @@ a:hover {
 
 h1 {
     color: black;
+    font-weight: 600;
 }
 
 p {
-    font-size: 16px;
+    font-weight: 300;
 }
 
 .contact {
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     background-color: #FF4850;
     color: #F0ECEE;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 18px;
     width: 100%;
 }
 
 .contact:hover {
     background-color: #CCC;
+    color: #FF4850;
 }
 
 .findOut {
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     background-color: #FF4850;
     color: #F0ECEE;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 18px;
     width: 100%;
 }
 
 .findOut:hover {
     background-color: #CCC;
+    color: #FF4850;
 }
 
 .flex-box-container {
@@ -90,53 +117,10 @@ p {
     padding-top: 30px;
 }
 
-
-    html {
-        background-color: #F0ECEE;
-        background: none;
-    }
-
-
-    .adoptMe {
-        font-size: 14;
-        flex: 20;
-        padding: 0px 0;
-        justify-content: left;
-    }
-    
-    .column {
-        padding: 0px 0;
-        justify-content: flex-start;
-    }
-    
-    .whatWeDo {
-        flex: 1;
-        padding: 0px 0;
-        justify-content: flex-start;
-    }
-    
-    .benefits {
-        flex: 1;
-        padding: 0px 0;
-        justify-content: flex-start;
-    }
-    
-    .ourBuddies {
-        flex: 1;
-        padding: 0px 0;
-        justify-content: flex-start;
-    }
-    
-    .contactUs {
-        flex: 1;
-        padding: 0px 0;
-        justify-content: flex-start;
-    }
-
-    .flex-box-container {
-        display: flex;
-        flex-direction: column;
-    }
+.flex-box-container {
+    display: flex;
+    flex-direction: column;
+}
 
 @media (min-width: 768px) {
     html {
@@ -145,39 +129,10 @@ p {
         min-height: 100%;
     }
     
-    body {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-        font-size: 18px;
-        font-style: normal;
-        color: #88898B;
-    }
-    
-    a:link {
-        text-decoration: none;
-        color: #88898B;
-        font-style: normal;
-      }
-    
-    a:visited {
-        text-decoration: none;
-        color: #88898B;
-        font-style: normal;
-    }
-    
-    a:hover {
-        text-decoration: none;
-        color: black;
-    }
-    
-    .flexbox {
+    ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
-    
-    .emphasizedText {
-        color: #FF4850;
     }
     
     h1 {
@@ -185,36 +140,18 @@ p {
     }
     
     p {
-        font-size: 16px;
-    }
-    
-    .adoptMe {
-        font-size: 16px;
-        padding: 15px 0;
+        font-size: 18px;
     }
 
-    .aboutUs {
-        display: inline-flex;
-        padding: 35px 0;
-        text-align: center;
-        margin: 10px;
+    .flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        vertical-align: middle;
     }
 
-    .whatWeDo {
-        display: inline-flex;
-        padding: 35px 0;
-        text-align: center;
-        margin: 10px;
-    }
-
-    .benefits {
-        display: inline-flex;
-        padding: 35px 0;
-        text-align: center;
-        margin: 10px;
-    }
-
-    .ourBuddies {
+    li {
+        flex: 1;
         display: inline-flex;
         padding: 35px 0;
         text-align: center;
@@ -223,13 +160,10 @@ p {
 
     .contact {
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     background-color: #FF4850;
     color: #F0ECEE;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 10px;
     font-size: 20px;
     }
 
@@ -237,11 +171,6 @@ p {
         display: inline-flex;
         text-align: center;
         margin: 10px;
-    }
-    
-    
-    .contact:hover {
-        background-color: #CCC;
     }
     
     .findOut {
@@ -257,12 +186,17 @@ p {
         width: 50%;
     }
     
-    .findOut:hover {
-        background-color: #CCC;
+    .leftColumn {
+        width: 50%;
+    }
+
+    .rightColumn {
+        display: flex;
+        flex-direction: column;
     }
     
     .flex-box-container {
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
     }
